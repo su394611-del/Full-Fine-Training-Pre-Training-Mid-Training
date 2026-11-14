@@ -176,4 +176,4 @@ These paths are excluded from Git by `.gitignore`. The script also prints exampl
 
 ## License
 
-This project is licensed under the Apache License, Version 2.0.© 2026 Sudhanshu Shukla · Licensed under the Apache License, Version 2.0
+This project is licensed under the Apache License, Version 2.0.© 2026 Sudhanshu Shukla · Licensed under the Apache License, Version 2.0.
