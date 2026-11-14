@@ -138,7 +138,7 @@ The script writes artifacts under these directories:
 support_classifier/
     best_model/            # Selected fine-tuned model and tokenizer
     checkpoint-*/          # Trainer checkpoints (if retained)
-support_classifier_frozen/ # Frozen-backbone training logs / outputs
+support_classifier_frozen/ # Frozen-backbone training logs/outputs
 ```
 
 These paths are excluded from Git by `.gitignore`. The script also prints example classifications and comparison metrics to the terminal/notebook output. Model files are **not** included in this repository.
@@ -150,7 +150,7 @@ These paths are excluded from Git by `.gitignore`. The script also prints exampl
 - Full and frozen-backbone runs start from independently loaded pretrained encoders. Results may vary by software version, GPU, stochastic initialization, and training conditions.
 - The notebook is an **equivalent conversion of the Python program**, not a separately trained or benchmarked model. Notebook cells depend on running earlier cells first.
 - Running the project downloads an upstream model; review its license/model card and the relevant library licenses before commercial reuse.
-- This is **sequence classification with an encoder model**, not LLM generation, DPO/PPO, or language-model pretraining.
+- This is **sequence classification with an encoder model**. In the next iteration, we will introduce mid-training for our own LLM and use consumer-grade Nvidia GPUs, not A100/H100.
 
 ## Troubleshooting
 
@@ -176,4 +176,4 @@ These paths are excluded from Git by `.gitignore`. The script also prints exampl
 
 ## License
 
-No project license is included. Add a `LICENSE` file only after deciding the intended terms for reuse and redistribution.
+This project is licensed under the Apache License, Version 2.0.© 2026 Sudhanshu Shukla · Licensed under the Apache License, Version 2.0
