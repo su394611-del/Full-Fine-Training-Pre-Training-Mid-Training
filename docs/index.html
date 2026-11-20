@@ -46,6 +46,23 @@
 @media(max-width:490px){.label-card{padding:14px 12px}.label-card strong{font-size:12px}.hero-art .graphrow{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.graphbox{font-size:11px;padding:11px 8px}.art-label{font-size:10px}.brand-label small{font-size:9px}.code-head{padding:10px 11px}.code-head span{font-size:11px}.copy{padding:5px 8px}.nav a{overflow-wrap:anywhere}}
 @media(max-width:345px){.brand-label{font-size:11px}.mark{width:32px;height:32px}.brand{gap:7px}.menu{padding:6px 10px}.label-grid{gap:8px}.stat strong{font-size:20px}}
 </style>
+<style id="ss-contact-styles">
+/* Contact section: the Formspree form lives at https://su394611-del.github.io/contact.html and is embedded via iframe. */
+.ss-contact{padding:clamp(56px,7vw,96px) 0;scroll-margin-top:88px}
+.ss-contact-inner{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,64px);align-items:start;padding-top:clamp(40px,5vw,64px);border-top:1px solid rgba(120,160,200,.18)}
+.ss-contact-copy .ss-contact-kicker{margin:0 0 12px;font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan,var(--aqua,var(--teal,var(--mint,#7be2f0))))}
+.ss-contact h2{margin:0 0 14px;font-size:clamp(28px,3.2vw,42px);line-height:1.15;letter-spacing:-.04em;font-weight:820}
+.ss-contact-grad{background:linear-gradient(90deg,#7be2f0,#b3a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ss-contact-copy p{margin:0;color:var(--muted,#aabed5);line-height:1.7}
+.ss-contact-copy p.ss-contact-more{margin-top:16px;font-size:14px}
+.ss-contact-more a{color:var(--cyan,var(--aqua,var(--teal,var(--mint,#7be2f0))));text-decoration:none}
+.ss-contact-more a:hover,.ss-contact-more a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.ss-contact-frame{display:block;width:100%;height:560px;border:0;background:transparent;color-scheme:dark;transition:height .2s ease}
+.ss-contact-fallback{margin:10px 2px 0;font-size:12px;color:var(--muted,#aabed5);opacity:.85}
+.ss-contact-fallback a{color:inherit}
+@media (max-width:880px){.ss-contact-inner{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.ss-contact-frame{transition:none}}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -140,8 +157,14 @@ py -3.12 -m venv .venv
 <li><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/blob/main/Full_Fine_Tuning_Using_DistilBERT.ipynb" target="_blank" rel="noopener noreferrer"><span class="fn">Full_Fine_Tuning_Using_DistilBERT.ipynb</span><span class="file-detail">Notebook implementation for VS Code and Jupyter <span aria-hidden="true">↗</span></span></a></li>
 <li><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/blob/main/requirements.txt" target="_blank" rel="noopener noreferrer"><span class="fn">requirements.txt</span><span class="file-detail">Python, PyTorch, Transformers and supporting dependencies <span aria-hidden="true">↗</span></span></a></li>
 <li><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/blob/main/License.txt" target="_blank" rel="noopener noreferrer"><span class="fn">License.txt</span><span class="file-detail">Apache-2.0 license text <span aria-hidden="true">↗</span></span></a></li></ul></div><aside class="source-aside"><h3>Technical references</h3><p>Inspect data preparation, tokenizer handling, Hugging Face Trainer configuration, the frozen-encoder comparison and scikit-learn evaluation directly in the Python script and notebook.</p><p>Source license: Apache License 2.0. The upstream DistilBERT model and its dependencies carry separate terms.</p><div class="source-links"><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training" target="_blank" rel="noopener noreferrer">Repository ↗</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/blob/main/README.md" target="_blank" rel="noopener noreferrer">README ↗</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/wiki" target="_blank" rel="noopener noreferrer">GitHub Wiki ↗</a><a href="https://su394611-del.github.io/" target="_blank" rel="noopener noreferrer">AI portfolio ↗</a><a href="https://huggingface.co/distilbert/distilbert-base-uncased" target="_blank" rel="noopener noreferrer">DistilBERT model ↗</a></div></aside></div></div></section>
+<section aria-labelledby="contact-heading" class="ss-contact" id="contact">
+<div class="container ss-contact-inner">
+<div class="ss-contact-copy"><p class="ss-contact-kicker">Get in touch</p><h2 id="contact-heading">Questions about <span class="ss-contact-grad">this project?</span></h2><p>Ask about the code, a collaboration or an AI engineering role. Messages go straight to my inbox, and I'll reply by email.</p><p class="ss-contact-more">More work: <a href="https://su394611-del.github.io/">AI engineering portfolio ↗</a></p></div>
+<div class="ss-contact-form"><iframe class="ss-contact-frame" id="ss-contact-frame" loading="lazy" src="/contact.html?from=Full-Fine-Training-Pre-Training-Mid-Training" title="Contact form"></iframe><p class="ss-contact-fallback">Form not loading? <a href="/contact.html?from=Full-Fine-Training-Pre-Training-Mid-Training">Open the contact page ↗</a></p></div>
+</div>
+</section>
 </main>
-<footer class="footer"><div class="container footer-inner"><span>© 2026 Sudhanshu Shukla · DistilBERT Fine-Tuning &amp; Model Evaluation · Apache-2.0 source</span><div class="foot"><a href="#top">Back to top ↑</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/wiki" target="_blank" rel="noopener noreferrer">Wiki ↗</a></div></div></footer>
+<footer class="footer"><div class="container footer-inner"><span>© 2026 Sudhanshu Shukla · DistilBERT Fine-Tuning &amp; Model Evaluation · Apache-2.0 source</span><div class="foot"><a href="#contact">Contact ↑</a><a href="#top">Back to top ↑</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/su394611-del/Full-Fine-Training-Pre-Training-Mid-Training/wiki" target="_blank" rel="noopener noreferrer">Wiki ↗</a></div></div></footer>
 <script>
 (function(){'use strict';
  const toggle=document.getElementById('menuButton'); const nav=document.getElementById('nav');
@@ -156,6 +179,10 @@ py -3.12 -m venv .venv
  this.setAttribute('aria-label',this.textContent+' commands');
  }));
 })();
+</script>
+<script>
+/* Resize the contact iframe to fit the form; /contact.html posts its height. */
+(function(){window.addEventListener('message',function(e){if(e.origin!==window.location.origin)return;var d=e.data;if(!d||d.type!=='contact-frame:height')return;var f=document.getElementById('ss-contact-frame');if(!f||e.source!==f.contentWindow)return;var h=Math.ceil(Number(d.height));if(h>0&&h<4000)f.style.height=h+'px';});})();
 </script>
 </body>
 </html>
