@@ -4,7 +4,7 @@ End-to-end **Hugging Face Transformers + PyTorch** project that fine-tunes `dist
 
 This repository includes the original Python training program and an equivalent, cell-by-cell Jupyter Notebook for local development or Google Colab. It also compares **full fine-tuning** against training only the **classification head with a frozen DistilBERT backbone**.
 
-> **:** The included dataset has only **30 hand-written examples** (24 training and 6 validation). Accuracy and F1 measured on this split are **not representative of production performance**. No evaluation scores are claimed in this README.
+> **Evaluation limitation:** The included dataset has only **30 hand-written examples** (24 training and 6 validation). Accuracy and F1 measured on this split are **not representative of production performance**. No evaluation scores are claimed in this README.
 
 ## Project files
 
